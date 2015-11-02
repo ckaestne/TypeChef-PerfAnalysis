@@ -1,0 +1,135 @@
+tests/attr.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/bp_signal.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/bp_signal_overflow.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/builtin-test.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/code-reading.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/dso-data.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/dwarf-unwind.c: (((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m")) && (InvalidExpression() && ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))))
+tests/evsel-roundtrip-name.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/evsel-tp-sched.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/fdarray.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/hists_common.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/hists_cumulate.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/hists_filter.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/hists_link.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/hists_output.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/keep-tracking.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/kmod-path.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/llvm.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/mmap-basic.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/mmap-thread-lookup.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/openat-syscall-all-cpus.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/openat-syscall-tp-fields.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/openat-syscall.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/parse-events.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/parse-no-sample-id-all.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/perf-record.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/perf-time-to-tsc.c: (((X86 == "y") || (X86 == "m")) && ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m")))
+tests/pmu.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/python-use.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/rdpmc.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/sample-parsing.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/sw-clock.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/switch-tracking.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/task-exit.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/thread-map.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/thread-mg-share.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+tests/vmlinux-kallsyms.c: ((DWARF_UNWIND == "y") || (DWARF_UNWIND == "m"))
+util/abspath.c: [TRUE]
+util/alias.c: [TRUE]
+util/annotate.c: [TRUE]
+util/auxtrace.c: ((AUXTRACE == "y") || (AUXTRACE == "m"))
+util/bitmap.c: [TRUE]
+util/build-id.c: [TRUE]
+util/callchain.c: [TRUE]
+util/cgroup.c: [TRUE]
+util/cloexec.c: [TRUE]
+util/color.c: [TRUE]
+util/comm.c: [TRUE]
+util/config.c: [TRUE]
+util/counts.c: [TRUE]
+util/cpumap.c: [TRUE]
+util/ctype.c: [TRUE]
+util/data-convert-bt.c: ((LIBBABELTRACE == "y") || (LIBBABELTRACE == "m"))
+util/data.c: [TRUE]
+util/db-export.c: [TRUE]
+util/debug.c: [TRUE]
+util/dso.c: [TRUE]
+util/dwarf-aux.c: ((DWARF == "y") || (DWARF == "m"))
+util/environment.c: [TRUE]
+util/event.c: [TRUE]
+util/evlist.c: [TRUE]
+util/evsel.c: [TRUE]
+util/exec_cmd.c: [TRUE]
+util/header.c: [TRUE]
+util/help.c: [TRUE]
+util/hist.c: [TRUE]
+util/intel-bts.c: ((AUXTRACE == "y") || (AUXTRACE == "m"))
+util/intel-pt-decoder/intel-pt-decoder.c: ((AUXTRACE == "y") || (AUXTRACE == "m"))
+util/intel-pt-decoder/intel-pt-insn-decoder.c: ((AUXTRACE == "y") || (AUXTRACE == "m"))
+util/intel-pt-decoder/intel-pt-log.c: ((AUXTRACE == "y") || (AUXTRACE == "m"))
+util/intel-pt-decoder/intel-pt-pkt-decoder.c: ((AUXTRACE == "y") || (AUXTRACE == "m"))
+util/intel-pt.c: ((AUXTRACE == "y") || (AUXTRACE == "m"))
+util/intlist.c: [TRUE]
+util/levenshtein.c: [TRUE]
+util/llvm-utils.c: [TRUE]
+util/lzma.c: ((LZMA == "y") || (LZMA == "m"))
+util/machine.c: [TRUE]
+util/map.c: [TRUE]
+util/ordered-events.c: [TRUE]
+util/pager.c: [TRUE]
+util/parse-branch-options.c: [TRUE]
+util/parse-events-bison.c: [TRUE]
+util/parse-events-flex.c: [TRUE]
+util/parse-events.c: [TRUE]
+util/parse-options.c: [TRUE]
+util/parse-regs-options.c: [TRUE]
+util/path.c: [TRUE]
+util/perf_regs.c: [TRUE]
+util/pmu-bison.c: [TRUE]
+util/pmu-flex.c: [TRUE]
+util/pmu.c: [TRUE]
+util/probe-event.c: ((LIBELF == "y") || (LIBELF == "m"))
+util/probe-file.c: ((LIBELF == "y") || (LIBELF == "m"))
+util/probe-finder.c: ((DWARF == "y") || (DWARF == "m"))
+util/pstack.c: [TRUE]
+util/quote.c: [TRUE]
+util/rblist.c: [TRUE]
+util/record.c: [TRUE]
+util/run-command.c: [TRUE]
+util/scripting-engines/trace-event-perl.c: ((LIBPERL == "y") || (LIBPERL == "m"))
+util/scripting-engines/trace-event-python.c: ((LIBPYTHON == "y") || (LIBPYTHON == "m"))
+util/session.c: [TRUE]
+util/sigchain.c: [TRUE]
+util/sort.c: [TRUE]
+util/srcline.c: [TRUE]
+util/stat-shadow.c: [TRUE]
+util/stat.c: [TRUE]
+util/strbuf.c: [TRUE]
+util/strfilter.c: [TRUE]
+util/string.c: [TRUE]
+util/strlist.c: [TRUE]
+util/svghelper.c: [TRUE]
+util/symbol-elf.c: ((LIBELF == "y") || (LIBELF == "m"))
+util/symbol-minimal.c: !LIBELF
+util/symbol.c: [TRUE]
+util/target.c: [TRUE]
+util/thread-stack.c: [TRUE]
+util/thread.c: [TRUE]
+util/thread_map.c: [TRUE]
+util/top.c: [TRUE]
+util/trace-event-info.c: [TRUE]
+util/trace-event-parse.c: [TRUE]
+util/trace-event-read.c: [TRUE]
+util/trace-event-scripting.c: [TRUE]
+util/trace-event.c: [TRUE]
+util/tsc.c: (((X86 == "y") || (X86 == "m")) || ((AUXTRACE == "y") || (AUXTRACE == "m")))
+util/unwind-libdw.c: ((LIBDW_DWARF_UNWIND == "y") || (LIBDW_DWARF_UNWIND == "m"))
+util/unwind-libunwind.c: ((LIBUNWIND == "y") || (LIBUNWIND == "m"))
+util/usage.c: [TRUE]
+util/util.c: [TRUE]
+util/values.c: [TRUE]
+util/vdso.c: [TRUE]
+util/wrapper.c: [TRUE]
+util/xyarray.c: [TRUE]
+util/zlib.c: ((ZLIB == "y") || (ZLIB == "m"))
